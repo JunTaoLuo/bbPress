@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSSEntry.h"
+#import "ASIHTTPRequest.h"
 
 @interface DataViewController : UIViewController
+{
+    NSMutableArray * _allEntries;
+    NSOperationQueue * _queue;
+    NSArray * _feeds;
+    
+    IBOutlet UITableView * tableView;
+}
 
-@property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) id dataObject;
+@property (retain) NSMutableArray * allEntries;
+@property (retain) NSOperationQueue * queue;
+@property (retain) NSArray * feeds;
 
 @end
