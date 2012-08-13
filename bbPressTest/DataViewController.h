@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "RSSEntry.h"
 #import "ASIHTTPRequest.h"
+#import "GDataXMLNode.h"
+#import "GDataXMLElement-Extras.h"
 
 @interface DataViewController : UIViewController
 {

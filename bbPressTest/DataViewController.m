@@ -115,16 +115,103 @@
     }
 }
 
+- (void)parseRss:(GDataXMLElement *)rootElement entries:(NSMutableArray *)entries {
+    
+    NSArray *channels = [rootElement elementsForName:@"channel"];
+    for (GDataXMLElement *channel in channels) {
+        
+        NSString *blogTitle = [channel valueForChild:@"title"];
+        
+        NSArray *items = [channel elementsForName:@"item"];
+        for (GDataXMLElement *item in items) {
+            
+            NSString *articleTitle = [item valueForChild:@"title"];
+            NSString *articleUrl = [item valueForChild:@"link"];
+            NSString *articleDateString = [item valueForChild:@"pubDate"];
+            NSDate *articleDate = nil;
+            
+            RSSEntry *entry = [[RSSEntry alloc] initWithBlogTitle:blogTitle
+                                                      articleTitle:articleTitle
+                                                        articleUrl:articleUrl
+                                                       articleDate:articleDate];
+            [entries addObject:entry];
+            
+        }
+    }
+    
+}
+
+- (void)parseAtom:(GDataXMLElement *)rootElement entries:(NSMutableArray *)entries {
+    
+    NSString *blogTitle = [rootElement valueForChild:@"title"];
+    
+    NSArray *items = [rootElement elementsForName:@"entry"];
+    for (GDataXMLElement *item in items) {
+        
+        NSString *articleTitle = [item valueForChild:@"title"];
+        NSString *articleUrl = nil;
+        NSArray *links = [item elementsForName:@"link"];
+        for(GDataXMLElement *link in links) {
+            NSString *rel = [[link attributeForName:@"rel"] stringValue];
+            NSString *type = [[link attributeForName:@"type"] stringValue];
+            if ([rel compare:@"alternate"] == NSOrderedSame &&
+                [type compare:@"text/html"] == NSOrderedSame) {
+                articleUrl = [[link attributeForName:@"href"] stringValue];
+            }
+        }
+        
+        NSString *articleDateString = [item valueForChild:@"updated"];
+        NSDate *articleDate = nil;
+        
+        RSSEntry *entry = [[RSSEntry alloc] initWithBlogTitle:blogTitle
+                                                  articleTitle:articleTitle
+                                                    articleUrl:articleUrl
+                                                   articleDate:articleDate];
+        [entries addObject:entry];
+        
+    }      
+    
+}
+
+- (void)parseFeed:(GDataXMLElement *)rootElement entries:(NSMutableArray *)entries {
+    if ([rootElement.name compare:@"rss"] == NSOrderedSame) {
+        [self parseRss:rootElement entries:entries];
+    } else if ([rootElement.name compare:@"feed"] == NSOrderedSame) {
+        [self parseAtom:rootElement entries:entries];
+    } else {
+        NSLog(@"Unsupported root element: %@", rootElement.name);
+    }
+}
+
 - (void)requestFinished:(ASIHTTPRequest *)request {
     
-    RSSEntry *entry = [[RSSEntry alloc] initWithBlogTitle:request.url.absoluteString
-                                              articleTitle:request.url.absoluteString
-                                                articleUrl:request.url.absoluteString
-                                               articleDate:[NSDate date]];
-    int insertIdx = 0;
-    [_allEntries insertObject:entry atIndex:insertIdx];
-    [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:insertIdx inSection:0]]
-                          withRowAnimation:UITableViewRowAnimationRight];
+    [_queue addOperationWithBlock:^{
+        
+        NSError *error;
+        GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:[request responseData]
+                                                               options:0 error:&error];
+        if (doc == nil) {
+            NSLog(@"Failed to parse %@", request.url);
+        } else {
+            
+            NSMutableArray *entries = [NSMutableArray array];
+            [self parseFeed:doc.rootElement entries:entries];
+            
+            [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                
+                for (RSSEntry *entry in entries) {
+                    
+                    int insertIdx = 0;
+                    [_allEntries insertObject:entry atIndex:insertIdx];
+                    [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:insertIdx inSection:0]]
+                                          withRowAnimation:UITableViewRowAnimationRight];
+                    
+                }
+                
+            }];
+            
+        }        
+    }];
     
 }
 

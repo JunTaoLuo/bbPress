@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468A1B0415D93AE400264F18 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0315D93AE400264F18 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3915D93B2800264F18 /* access.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0515D93B2800264F18 /* access.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3A15D93B2800264F18 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0715D93B2800264F18 /* alloc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3B15D93B2800264F18 /* attrask.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0815D93B2800264F18 /* attrask.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3C15D93B2800264F18 /* attrdict.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0915D93B2800264F18 /* attrdict.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3D15D93B2800264F18 /* attrget.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0B15D93B2800264F18 /* attrget.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3E15D93B2800264F18 /* attrs.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0C15D93B2800264F18 /* attrs.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B3F15D93B2800264F18 /* buffio.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B0E15D93B2800264F18 /* buffio.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4015D93B2800264F18 /* charsets.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1015D93B2800264F18 /* charsets.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4115D93B2800264F18 /* clean.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1215D93B2800264F18 /* clean.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4215D93B2800264F18 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1415D93B2800264F18 /* config.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4315D93B2800264F18 /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1615D93B2800264F18 /* entities.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4415D93B2800264F18 /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1815D93B2800264F18 /* fileio.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4515D93B2800264F18 /* iconvtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1B15D93B2800264F18 /* iconvtc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4615D93B2800264F18 /* istack.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1D15D93B2800264F18 /* istack.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4715D93B2800264F18 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B1E15D93B2800264F18 /* lexer.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4815D93B2800264F18 /* localize.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2015D93B2800264F18 /* localize.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4915D93B2800264F18 /* mappedio.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2115D93B2800264F18 /* mappedio.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4A15D93B2800264F18 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2415D93B2800264F18 /* parser.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4B15D93B2800264F18 /* pprint.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2715D93B2800264F18 /* pprint.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4C15D93B2800264F18 /* streamio.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2915D93B2800264F18 /* streamio.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4D15D93B2800264F18 /* tagask.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2B15D93B2800264F18 /* tagask.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4E15D93B2800264F18 /* tags.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B2C15D93B2800264F18 /* tags.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B4F15D93B2800264F18 /* tidylib.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B3115D93B2800264F18 /* tidylib.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B5015D93B2800264F18 /* tmbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B3215D93B2800264F18 /* tmbstr.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B5115D93B2800264F18 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B3415D93B2800264F18 /* utf8.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B5215D93B2800264F18 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B3715D93B2800264F18 /* win32tc.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		468A1B5515D93D8C00264F18 /* GDataXMLElement-Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 468A1B5415D93D8C00264F18 /* GDataXMLElement-Extras.m */; };
 		4695DCB315D8372F00A29484 /* RSSEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4695DCB215D8372F00A29484 /* RSSEntry.m */; };
 		4695DCD415D840E300A29484 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4695DCD315D840E300A29484 /* CFNetwork.framework */; };
 		4695DCD615D840EE00A29484 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4695DCD515D840EE00A29484 /* SystemConfiguration.framework */; };
@@ -50,6 +78,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		468A1B0215D93AE400264F18 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = GDataXML/GDataXMLNode.h; sourceTree = "<group>"; };
+		468A1B0315D93AE400264F18 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = GDataXML/GDataXMLNode.m; sourceTree = "<group>"; };
+		468A1B0515D93B2800264F18 /* access.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = access.c; path = GDataXML/access.c; sourceTree = "<group>"; };
+		468A1B0615D93B2800264F18 /* access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = access.h; path = GDataXML/access.h; sourceTree = "<group>"; };
+		468A1B0715D93B2800264F18 /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = alloc.c; path = GDataXML/alloc.c; sourceTree = "<group>"; };
+		468A1B0815D93B2800264F18 /* attrask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attrask.c; path = GDataXML/attrask.c; sourceTree = "<group>"; };
+		468A1B0915D93B2800264F18 /* attrdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attrdict.c; path = GDataXML/attrdict.c; sourceTree = "<group>"; };
+		468A1B0A15D93B2800264F18 /* attrdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attrdict.h; path = GDataXML/attrdict.h; sourceTree = "<group>"; };
+		468A1B0B15D93B2800264F18 /* attrget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attrget.c; path = GDataXML/attrget.c; sourceTree = "<group>"; };
+		468A1B0C15D93B2800264F18 /* attrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attrs.c; path = GDataXML/attrs.c; sourceTree = "<group>"; };
+		468A1B0D15D93B2800264F18 /* attrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attrs.h; path = GDataXML/attrs.h; sourceTree = "<group>"; };
+		468A1B0E15D93B2800264F18 /* buffio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffio.c; path = GDataXML/buffio.c; sourceTree = "<group>"; };
+		468A1B0F15D93B2800264F18 /* buffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffio.h; path = GDataXML/buffio.h; sourceTree = "<group>"; };
+		468A1B1015D93B2800264F18 /* charsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = charsets.c; path = GDataXML/charsets.c; sourceTree = "<group>"; };
+		468A1B1115D93B2800264F18 /* charsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = charsets.h; path = GDataXML/charsets.h; sourceTree = "<group>"; };
+		468A1B1215D93B2800264F18 /* clean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = clean.c; path = GDataXML/clean.c; sourceTree = "<group>"; };
+		468A1B1315D93B2800264F18 /* clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clean.h; path = GDataXML/clean.h; sourceTree = "<group>"; };
+		468A1B1415D93B2800264F18 /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = config.c; path = GDataXML/config.c; sourceTree = "<group>"; };
+		468A1B1515D93B2800264F18 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = GDataXML/config.h; sourceTree = "<group>"; };
+		468A1B1615D93B2800264F18 /* entities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = entities.c; path = GDataXML/entities.c; sourceTree = "<group>"; };
+		468A1B1715D93B2800264F18 /* entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entities.h; path = GDataXML/entities.h; sourceTree = "<group>"; };
+		468A1B1815D93B2800264F18 /* fileio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fileio.c; path = GDataXML/fileio.c; sourceTree = "<group>"; };
+		468A1B1915D93B2800264F18 /* fileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fileio.h; path = GDataXML/fileio.h; sourceTree = "<group>"; };
+		468A1B1A15D93B2800264F18 /* forward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = forward.h; path = GDataXML/forward.h; sourceTree = "<group>"; };
+		468A1B1B15D93B2800264F18 /* iconvtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = iconvtc.c; path = GDataXML/iconvtc.c; sourceTree = "<group>"; };
+		468A1B1C15D93B2800264F18 /* iconvtc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iconvtc.h; path = GDataXML/iconvtc.h; sourceTree = "<group>"; };
+		468A1B1D15D93B2800264F18 /* istack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = istack.c; path = GDataXML/istack.c; sourceTree = "<group>"; };
+		468A1B1E15D93B2800264F18 /* lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lexer.c; path = GDataXML/lexer.c; sourceTree = "<group>"; };
+		468A1B1F15D93B2800264F18 /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lexer.h; path = GDataXML/lexer.h; sourceTree = "<group>"; };
+		468A1B2015D93B2800264F18 /* localize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = localize.c; path = GDataXML/localize.c; sourceTree = "<group>"; };
+		468A1B2115D93B2800264F18 /* mappedio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mappedio.c; path = GDataXML/mappedio.c; sourceTree = "<group>"; };
+		468A1B2215D93B2800264F18 /* mappedio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mappedio.h; path = GDataXML/mappedio.h; sourceTree = "<group>"; };
+		468A1B2315D93B2800264F18 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = message.h; path = GDataXML/message.h; sourceTree = "<group>"; };
+		468A1B2415D93B2800264F18 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parser.c; path = GDataXML/parser.c; sourceTree = "<group>"; };
+		468A1B2515D93B2800264F18 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parser.h; path = GDataXML/parser.h; sourceTree = "<group>"; };
+		468A1B2615D93B2800264F18 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = GDataXML/platform.h; sourceTree = "<group>"; };
+		468A1B2715D93B2800264F18 /* pprint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pprint.c; path = GDataXML/pprint.c; sourceTree = "<group>"; };
+		468A1B2815D93B2800264F18 /* pprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pprint.h; path = GDataXML/pprint.h; sourceTree = "<group>"; };
+		468A1B2915D93B2800264F18 /* streamio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = streamio.c; path = GDataXML/streamio.c; sourceTree = "<group>"; };
+		468A1B2A15D93B2800264F18 /* streamio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = streamio.h; path = GDataXML/streamio.h; sourceTree = "<group>"; };
+		468A1B2B15D93B2800264F18 /* tagask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tagask.c; path = GDataXML/tagask.c; sourceTree = "<group>"; };
+		468A1B2C15D93B2800264F18 /* tags.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tags.c; path = GDataXML/tags.c; sourceTree = "<group>"; };
+		468A1B2D15D93B2800264F18 /* tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tags.h; path = GDataXML/tags.h; sourceTree = "<group>"; };
+		468A1B2E15D93B2800264F18 /* tidy-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "tidy-int.h"; path = "GDataXML/tidy-int.h"; sourceTree = "<group>"; };
+		468A1B2F15D93B2800264F18 /* tidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tidy.h; path = GDataXML/tidy.h; sourceTree = "<group>"; };
+		468A1B3015D93B2800264F18 /* tidyenum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tidyenum.h; path = GDataXML/tidyenum.h; sourceTree = "<group>"; };
+		468A1B3115D93B2800264F18 /* tidylib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tidylib.c; path = GDataXML/tidylib.c; sourceTree = "<group>"; };
+		468A1B3215D93B2800264F18 /* tmbstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tmbstr.c; path = GDataXML/tmbstr.c; sourceTree = "<group>"; };
+		468A1B3315D93B2800264F18 /* tmbstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tmbstr.h; path = GDataXML/tmbstr.h; sourceTree = "<group>"; };
+		468A1B3415D93B2800264F18 /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utf8.c; path = GDataXML/utf8.c; sourceTree = "<group>"; };
+		468A1B3515D93B2800264F18 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utf8.h; path = GDataXML/utf8.h; sourceTree = "<group>"; };
+		468A1B3615D93B2800264F18 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = GDataXML/version.h; sourceTree = "<group>"; };
+		468A1B3715D93B2800264F18 /* win32tc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = win32tc.c; path = GDataXML/win32tc.c; sourceTree = "<group>"; };
+		468A1B3815D93B2800264F18 /* win32tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = win32tc.h; path = GDataXML/win32tc.h; sourceTree = "<group>"; };
+		468A1B5315D93D8C00264F18 /* GDataXMLElement-Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXMLElement-Extras.h"; sourceTree = "<group>"; };
+		468A1B5415D93D8C00264F18 /* GDataXMLElement-Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDataXMLElement-Extras.m"; sourceTree = "<group>"; };
 		4695DCB115D8372F00A29484 /* RSSEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSEntry.h; sourceTree = "<group>"; };
 		4695DCB215D8372F00A29484 /* RSSEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSEntry.m; sourceTree = "<group>"; };
 		4695DCD315D840E300A29484 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -132,6 +216,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		468A1B0015D93AD100264F18 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				468A1B0515D93B2800264F18 /* access.c */,
+				468A1B0615D93B2800264F18 /* access.h */,
+				468A1B0715D93B2800264F18 /* alloc.c */,
+				468A1B0815D93B2800264F18 /* attrask.c */,
+				468A1B0915D93B2800264F18 /* attrdict.c */,
+				468A1B0A15D93B2800264F18 /* attrdict.h */,
+				468A1B0B15D93B2800264F18 /* attrget.c */,
+				468A1B0C15D93B2800264F18 /* attrs.c */,
+				468A1B0D15D93B2800264F18 /* attrs.h */,
+				468A1B0E15D93B2800264F18 /* buffio.c */,
+				468A1B0F15D93B2800264F18 /* buffio.h */,
+				468A1B1015D93B2800264F18 /* charsets.c */,
+				468A1B1115D93B2800264F18 /* charsets.h */,
+				468A1B1215D93B2800264F18 /* clean.c */,
+				468A1B1315D93B2800264F18 /* clean.h */,
+				468A1B1415D93B2800264F18 /* config.c */,
+				468A1B1515D93B2800264F18 /* config.h */,
+				468A1B1615D93B2800264F18 /* entities.c */,
+				468A1B1715D93B2800264F18 /* entities.h */,
+				468A1B1815D93B2800264F18 /* fileio.c */,
+				468A1B1915D93B2800264F18 /* fileio.h */,
+				468A1B1A15D93B2800264F18 /* forward.h */,
+				468A1B1B15D93B2800264F18 /* iconvtc.c */,
+				468A1B1C15D93B2800264F18 /* iconvtc.h */,
+				468A1B1D15D93B2800264F18 /* istack.c */,
+				468A1B1E15D93B2800264F18 /* lexer.c */,
+				468A1B1F15D93B2800264F18 /* lexer.h */,
+				468A1B2015D93B2800264F18 /* localize.c */,
+				468A1B2115D93B2800264F18 /* mappedio.c */,
+				468A1B2215D93B2800264F18 /* mappedio.h */,
+				468A1B2315D93B2800264F18 /* message.h */,
+				468A1B2415D93B2800264F18 /* parser.c */,
+				468A1B2515D93B2800264F18 /* parser.h */,
+				468A1B2615D93B2800264F18 /* platform.h */,
+				468A1B2715D93B2800264F18 /* pprint.c */,
+				468A1B2815D93B2800264F18 /* pprint.h */,
+				468A1B2915D93B2800264F18 /* streamio.c */,
+				468A1B2A15D93B2800264F18 /* streamio.h */,
+				468A1B2B15D93B2800264F18 /* tagask.c */,
+				468A1B2C15D93B2800264F18 /* tags.c */,
+				468A1B2D15D93B2800264F18 /* tags.h */,
+				468A1B2E15D93B2800264F18 /* tidy-int.h */,
+				468A1B2F15D93B2800264F18 /* tidy.h */,
+				468A1B3015D93B2800264F18 /* tidyenum.h */,
+				468A1B3115D93B2800264F18 /* tidylib.c */,
+				468A1B3215D93B2800264F18 /* tmbstr.c */,
+				468A1B3315D93B2800264F18 /* tmbstr.h */,
+				468A1B3415D93B2800264F18 /* utf8.c */,
+				468A1B3515D93B2800264F18 /* utf8.h */,
+				468A1B3615D93B2800264F18 /* version.h */,
+				468A1B3715D93B2800264F18 /* win32tc.c */,
+				468A1B3815D93B2800264F18 /* win32tc.h */,
+				468A1B0215D93AE400264F18 /* GDataXMLNode.h */,
+				468A1B0315D93AE400264F18 /* GDataXMLNode.m */,
+				468A1B5315D93D8C00264F18 /* GDataXMLElement-Extras.h */,
+				468A1B5415D93D8C00264F18 /* GDataXMLElement-Extras.m */,
+			);
+			name = GDataXML;
+			sourceTree = "<group>";
+		};
 		4695DCB515D83EEE00A29484 /* ASIHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +311,7 @@
 		46D00AE915D69E3B0016091B = {
 			isa = PBXGroup;
 			children = (
+				468A1B0015D93AD100264F18 /* GDataXML */,
 				4695DCB515D83EEE00A29484 /* ASIHTTPRequest */,
 				46D00AFE15D69E3B0016091B /* bbPressTest */,
 				46D00B2515D69E3B0016091B /* bbPressTestTests */,
@@ -369,6 +517,34 @@
 				4695DCF515D8436700A29484 /* ASIInputStream.m in Sources */,
 				4695DCF615D8436700A29484 /* ASINetworkQueue.m in Sources */,
 				4695DCF915D8448F00A29484 /* Reachability.m in Sources */,
+				468A1B0415D93AE400264F18 /* GDataXMLNode.m in Sources */,
+				468A1B3915D93B2800264F18 /* access.c in Sources */,
+				468A1B3A15D93B2800264F18 /* alloc.c in Sources */,
+				468A1B3B15D93B2800264F18 /* attrask.c in Sources */,
+				468A1B3C15D93B2800264F18 /* attrdict.c in Sources */,
+				468A1B3D15D93B2800264F18 /* attrget.c in Sources */,
+				468A1B3E15D93B2800264F18 /* attrs.c in Sources */,
+				468A1B3F15D93B2800264F18 /* buffio.c in Sources */,
+				468A1B4015D93B2800264F18 /* charsets.c in Sources */,
+				468A1B4115D93B2800264F18 /* clean.c in Sources */,
+				468A1B4215D93B2800264F18 /* config.c in Sources */,
+				468A1B4315D93B2800264F18 /* entities.c in Sources */,
+				468A1B4415D93B2800264F18 /* fileio.c in Sources */,
+				468A1B4515D93B2800264F18 /* iconvtc.c in Sources */,
+				468A1B4615D93B2800264F18 /* istack.c in Sources */,
+				468A1B4715D93B2800264F18 /* lexer.c in Sources */,
+				468A1B4815D93B2800264F18 /* localize.c in Sources */,
+				468A1B4915D93B2800264F18 /* mappedio.c in Sources */,
+				468A1B4A15D93B2800264F18 /* parser.c in Sources */,
+				468A1B4B15D93B2800264F18 /* pprint.c in Sources */,
+				468A1B4C15D93B2800264F18 /* streamio.c in Sources */,
+				468A1B4D15D93B2800264F18 /* tagask.c in Sources */,
+				468A1B4E15D93B2800264F18 /* tags.c in Sources */,
+				468A1B4F15D93B2800264F18 /* tidylib.c in Sources */,
+				468A1B5015D93B2800264F18 /* tmbstr.c in Sources */,
+				468A1B5115D93B2800264F18 /* utf8.c in Sources */,
+				468A1B5215D93B2800264F18 /* win32tc.c in Sources */,
+				468A1B5515D93D8C00264F18 /* GDataXMLElement-Extras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +658,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bbPressTest/bbPressTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "bbPressTest/bbPressTest-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -493,7 +671,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bbPressTest/bbPressTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "bbPressTest/bbPressTest-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
